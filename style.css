@@ -1,0 +1,70 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+#portfolioWrapper {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#navbarContainer {
+    
+}
+
+#rightHeader {
+    display: flex;
+    gap: 15px;
+}
+
+#leftHeader {
+    font-weight: 500;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    padding-bottom: 20px;
+    border-bottom: 1px solid black;
+}
+
+#introductionWrapper {
+    max-width: 700px;
+    border-right: 1px solid black;
+    padding-top: 30px;
+}
+
+#introductionContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.Title {
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.Subtitle {
+
+
+}
+
+.Italic {
+    font-style: italic;
+}
+
+#socialLinks {
+    display: flex;
+    gap: 15px;
+}
+
+a {
+    color: gray;
+}
