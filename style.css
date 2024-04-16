@@ -4,14 +4,10 @@ body {
 }
 
 #portfolioWrapper {
-    margin-left: 15px;
-    margin-right: 15px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
-}
-
-#navbarContainer {
-    
+    max-width: 1200px;
 }
 
 #rightHeader {
@@ -27,39 +23,44 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 25px;
-    font-family: "Roboto Slab", serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    padding-bottom: 20px;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 100%;
+    border-top: 1px solid black;
     border-bottom: 1px solid black;
 }
 
-#sideWrapper {
-    border-right: 1px solid black;
-    padding-top: 30px;
-    width: 100%;
-}
-
 #introductionContainer {
+    padding-top: 15px;
+    padding-bottom: 15px;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 10px;
+    border-bottom: 1px solid black;
 }
 
-#introductionWrapper {
-    
+.BigTitle {
+    font-size: 25px;
+    font-family: "Roboto Slab", serif;
+    font-weight: 500;
 }
 
 .Title {
-    font-family: "Roboto Slab", serif;
-    font-optical-sizing: auto;
+    font-size: 20px;
     font-weight: 500;
-    font-size: 25px;
+    font-family: "Roboto Slab", serif;
 }
 
 .Subtitle {
+    font-size: 20px;
+}
 
+.Text {
+    font-size: 17px;
 }
 
 .Italic {
@@ -72,47 +73,27 @@ body {
 }
 
 a {
-    color: gray;
+    color: blue;
 }
 
-#experienceWrapper {
-    margin-top: 50px;
-    height: calc(100vh - 120px);
-    width: 100%;
-    overflow-y: auto;
+.option:hover{
+    color: blue;
 }
 
-#experienceContainer {
-    
-}
-
-.Experience {
+.project-list {
+    column-count: 3;
     margin-top: 15px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.project-section {
     border-top: 1px solid black;
 }
 
-#content {
-    display: flex;
-    width: 100%;
+.project-selected {
+    color: blue;
 }
 
-#contentWrapper {
-    padding: 15px;
-    max-width: 100%;
+.option {
+    cursor: pointer;
 }
-
-#contentContainer {
-    width: 100%;
-}
-
-#projectList {
-    border-top: 1px solid black;
-    display: flex;
-}
-
-.Element {
-
-}
-

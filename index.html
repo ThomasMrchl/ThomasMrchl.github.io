@@ -1,102 +1,107 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <div id="portfolioWrapper">
-            <div id="navbarContainer">
-                <div id="header">
-                    <div id="leftHeader">
-                        <p>THOMAS MARCHAL</p>
-                    </div>
-                    <div id="rightHeader">
-                        <div>Work</div>
-                        <div>About</div>
-                        <div>More</div>
-                    </div>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <script>
+        function showContent(contentId) {
+            var contentSections = document.getElementsByClassName("content-section");
+            for (var i = 0; i < contentSections.length; i++) {
+                contentSections[i].style.display = "none";
+            }
+            document.getElementById(contentId).style.display = "block";
+        }
+        function toggleName() {
+            var nameElement = document.getElementById("name");
+            if (nameElement.innerText === "THOMAS MARCHAL") {
+                nameElement.innerText = "PATRICK";
+            } else {
+                nameElement.innerText = "THOMAS MARCHAL";
+            }
+        }
+        function showProject(projectId) {
+            var projectSections = document.getElementsByClassName("project-section");
+            for (var i = 0; i < projectSections.length; i++) {
+                projectSections[i].style.display = "none";
+            }
+            document.getElementById(projectId).style.display = "block";
+        }
+    </script>
+</head>
+<body>
+    <div id="portfolioWrapper">
+        <div id="navbarContainer">
+            <div id="header">
+                <div id="leftHeader">
+                    <div onclick="toggleName()" class="BigTitle" id="name">THOMAS MARCHAL</div>
                 </div>
-            </div>
-            <div id="content">
-                <div id="sideWrapper">
-                    <div id="introductionWrapper">
-                        <div id="introductionContainer"></div>
-                            <div class="Subtitle">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, odio ea. Minus at cumque consequatur? Error quidem aliquam vitae quos molestiae debitis voluptates veritatis! Nemo nostrum quaerat sequi nihil explicabo!</div>
-                            <div class="Italic">Studying software engineering at Efrei Paris.</div>
-                            <div id="socialLinks">
-                                <a href="mailto:thomas.marchal@efrei.net">Email</a>
-                                <a href="https://github.com/ThomasMrchl">Github</a>
-                                <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile">LinkedIn</a>
-                                <a href="https://open.spotify.com/user/314i26iofrkoekkajkaqvmhey6um?si=8916ea8e544d4a70">Spotify</a>
-                            </div>
-                        </div>
-                        <div id="experienceWrapper">
-                            <div id="experienceContainer">
-                                <div class="Title">EXPERIENCE</div>
-                                <div class="Experience">
-                                    <strong>Somewhere Somehow</strong>
-                                    <div class="Italic">Full-stack Software Enginner</div>
-                                    <div>Building a social platform that deepens connections that matter to you.</div>
-                                </div>
-                                <div class="Experience">
-                                    <strong>Somewhere Somehow</strong>
-                                    <div class="Italic">Full-stack Software Enginner</div>
-                                    <div>Building a social platform that deepens connections that matter to you.</div>
-                                </div>
-                                <div class="Experience">
-                                    <strong>Somewhere Somehow</strong>
-                                    <div class="Italic">Full-stack Software Enginner</div>
-                                    <div>Building a social platform that deepens connections that matter to you.</div>
-                                </div>
-                                <div class="Experience">
-                                    <strong>Somewhere Somehow</strong>
-                                    <div class="Italic">Full-stack Software Enginner</div>
-                                    <div>Building a social platform that deepens connections that matter to you.</div>
-                                </div>
-                                <div class="Experience">
-                                    <strong>Somewhere Somehow</strong>
-                                    <div class="Italic">Full-stack Software Enginner</div>
-                                    <div>Building a social platform that deepens connections that matter to you.</div>
-                                </div>
-                                <div class="Experience">
-                                    <strong>Somewhere Somehow</strong>
-                                    <div class="Italic">Full-stack Software Enginner</div>
-                                    <div>Building a social platform that deepens connections that matter to you.</div>
-                                </div>
-                                <div class="Experience">
-                                    <strong>Somewhere Somehow</strong>
-                                    <div class="Italic">Full-stack Software Enginner</div>
-                                    <div>Building a social platform that deepens connections that matter to you.</div>
-                                </div>
-                                <div class="Experience">
-                                    <strong>Somewhere Somehow</strong>
-                                    <div class="Italic">Full-stack Software Enginner</div>
-                                    <div>Building a social platform that deepens connections that matter to you.</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                    <div id="contentWrapper">
-                        <div id="contentContainer">
-                            <div class="Title">SELECTED WORK</div>
-                            <div id="projectList">
-                                <div class="Element">mydreamwallet</div>
-                                <div class="Element">havens</div>
-                                <div class="Element">bookovery</div>
-                                <div class="Element">mydreamwallet</div>
-                                <div class="Element">mydreamwallet</div>
-                                <div class="Element">havens</div>
-                                <div class="Element">bookovery</div>
-                                <div class="Element">mydreamwallet</div>
-                            </div>
-                        </div>
-                    </div>
+                <div id="rightHeader">
+                    <div onclick="showContent('workContent')" class="Title">Work</div>
+                    <div onclick="showContent('aboutContent')" class="Title">About</div>
+                    <div onclick="showContent('moreContent')" class="Title">More</div>
                 </div>
             </div>
         </div>
-    </body>
+        <div id="content">
+            <div id="introductionContainer">
+                <div class="Subtitle">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, odio ea. Minus at cumque consequatur? Error quidem aliquam vitae quos molestiae debitis voluptates veritatis! Nemo nostrum quaerat sequi nihil explicabo!</div>
+                <div class="Italic">Studying software engineering at Efrei Paris.</div>
+                <div id="socialLinks">
+                    <a href="mailto:thomas.marchal@efrei.net">Email</a>
+                    <a href="https://github.com/ThomasMrchl">Github</a>
+                    <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile">LinkedIn</a>
+                    <a href="https://open.spotify.com/user/314i26iofrkoekkajkaqvmhey6um?si=8916ea8e544d4a70">Spotify</a>
+                </div>
+            </div>
+            <div id="workContent" class="content-section">
+                <div class="BigTitle">SELECTED WORK</div>
+                    <div id="optionList" class="project-list">
+                        <div class="option" onclick="showProject('Havens')">Havens</div>
+                        <div class="option" onclick="showProject('mydreamwallet')">mydreamwallet</div>
+                        <div class="option" onclick="showProject('project3')">Project 3</div>
+                        <div class="option" onclick="showProject('project4')">Project 4</div>
+                        <div class="option" onclick="showProject('project5')">Project 5</div>
+                        <div class="option" onclick="showProject('project6')">Project 6</div>
+                        <div class="option" onclick="showProject('project7')">Project 7</div>
+                        <div class="option" onclick="showProject('project8')">Project 8</div>
+                    </div>
+                    <div id="Havens" class="project-section" style="display: none;">
+                        <div class="BigTitle">Havens</div>
+                    </div>
+                    <div id="mydreamwallet" class="project-section" style="display: none;">
+                        <div class="BigTitle">mydreamwallet</div>
+                    </div>
+                    <div id="project3" class="project-section" style="display: none;">
+                        <div class="BigTitle">Project 3</div>
+                    </div>
+                    <div id="project4" class="project-section" style="display: none;">
+                        <div class="BigTitle">Project 4</div>
+                    </div>
+                    <div id="project5" class="project-section" style="display: none;">
+                        <div class="BigTitle">Project 5</div>
+                    </div>
+                    <div id="project6" class="project-section" style="display: none;">
+                        <div class="BigTitle">Project 6</div>
+                    </div>
+                    <div id="project7" class="project-section" style="display: none;">
+                        <div class="BigTitle">Project 7</div>
+                    </div>
+                    <div id="project8" class="project-section" style="display: none;">
+                        <div class="BigTitle">Project 8</div>
+                    </div>
+                </div>
+            </div>
+            <div id="aboutContent" class="content-section" style="display:none;">
+                <div class="BigTitle">ABOUT ME</div>
+                <p>about content</p>
+            </div>
+            <div id="moreContent" class="content-section" style="display:none;">
+                <div class="BigTitle">MORE</div>
+                <p>More content goes here...</p>
+            </div>
+        </div>
+    </div>
+</body>
 </html>
