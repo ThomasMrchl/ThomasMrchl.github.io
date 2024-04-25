@@ -28,6 +28,9 @@
             }
             document.getElementById(projectId).style.display = "block";
         }
+        window.onload = function() {
+            showProject('Havens');
+        };
     </script>
 </head>
 <body>
@@ -59,8 +62,8 @@
                 <div class="BigTitle">SELECTED WORK</div>
                     <div id="optionList" class="project-list">
                         <div class="option" onclick="showProject('Havens')">Havens</div>
+                        <div class="option" onclick="showProject('Havens API')">Havens API</div>
                         <div class="option" onclick="showProject('mydreamwallet')">mydreamwallet</div>
-                        <div class="option" onclick="showProject('project3')">Project 3</div>
                         <div class="option" onclick="showProject('project4')">Project 4</div>
                         <div class="option" onclick="showProject('project5')">Project 5</div>
                         <div class="option" onclick="showProject('project6')">Project 6</div>
@@ -69,12 +72,24 @@
                     </div>
                     <div id="Havens" class="project-section" style="display: none;">
                         <div class="BigTitle">Havens</div>
+                        <div>
+                            <a href="https://havens.fr" target="_blank"><img src="./img/SimpleLogo.png" height="200" width="200"></a>
+                        </div>
+                        <div id="textPresentation">
+                            The idea of Havens is to let you build your own social media. It's a club-based community allowing you connect with people who share your passions. 
+                        </div>
+                        <div>Havens is design using React (Next JS will be implemented soon to enhance the rendering) for the front and it is using the <a onclick="showProject('Havens API')">Havens API</a> to deal with the database.</div>
+
+                    </div>
+                    <div id="Havens API" class="project-section" style="display: none;">
+                        <div class="BigTitle">Havens API</div>
+                        <div>
+                            <a href="https://api.havens.fr" target="_blank"><img src="./img/HavensAPILogo.png" height="200" width="200"></a>
+                        </div>
+                        <div>Havens REST API is build using Express in NodeJS, the documentation of this API is not yet available. The goal of this API is to let any applications interact with the <a onclick="showProject('Havens')">Havens</a> social network for free.</div>
                     </div>
                     <div id="mydreamwallet" class="project-section" style="display: none;">
                         <div class="BigTitle">mydreamwallet</div>
-                    </div>
-                    <div id="project3" class="project-section" style="display: none;">
-                        <div class="BigTitle">Project 3</div>
                     </div>
                     <div id="project4" class="project-section" style="display: none;">
                         <div class="BigTitle">Project 4</div>
@@ -94,7 +109,7 @@
                 </div>
             </div>
             <div id="aboutContent" class="content-section" style="display:none;">
-                <div class="BigTitle">ABOUT ME</div>
+                <div class="BigTitle">Hi, I'm Thomas</div>
                 <p>about content</p>
             </div>
             <div id="moreContent" class="content-section" style="display:none;">

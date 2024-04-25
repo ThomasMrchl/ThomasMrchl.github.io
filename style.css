@@ -3,6 +3,10 @@ body {
     font-size: 20px;
 }
 
+a {
+    cursor: pointer;
+}
+
 #portfolioWrapper {
     margin: 0 auto;
     display: flex;
@@ -53,6 +57,7 @@ body {
     font-size: 20px;
     font-weight: 500;
     font-family: "Roboto Slab", serif;
+    cursor: pointer;
 }
 
 .Subtitle {
