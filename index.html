@@ -49,8 +49,8 @@
         </div>
         <div id="content">
             <div id="introductionContainer">
-                <div class="Subtitle">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, odio ea. Minus at cumque consequatur? Error quidem aliquam vitae quos molestiae debitis voluptates veritatis! Nemo nostrum quaerat sequi nihil explicabo!</div>
-                <div class="Italic">Studying software engineering at Efrei Paris.</div>
+                <div class="Subtitle">Hi! I'm a student in software engineering passionate about creating engaging experiences, usefull apps and learning new technologies.</div>
+                <div class="Italic">Based in Paris / Efrei Paris</div>
                 <div id="socialLinks">
                     <a href="mailto:thomas.marchal@efrei.net">Email</a>
                     <a href="https://github.com/ThomasMrchl">Github</a>
@@ -59,42 +59,66 @@
                 </div>
             </div>
             <div id="workContent" class="content-section">
+                <!-- Adding this category when having tech experiences inside several companies
+                <div class="BigTitle">EXPERIENCES</div>
+                    <div id="optionList" class="project-list">
+                        <div class="option" onclick="showProject('Havens')">Havens</div>
+                        <div class="option" onclick="showProject('Havens API')">Havens API</div>
+                        <div class="option" onclick="showProject('mydreamwallet')">mydreamwallet</div>
+                        <div class="option" onclick="showProject('Bookovery')">Bookovery</div>
+                        <div class="option" onclick="showProject('project5')">Project 5</div>
+                        <div class="option" onclick="showProject('project6')">Project 6</div>
+                        <div class="option" onclick="showProject('project7')">Project 7</div>
+                        <div class="option" onclick="showProject('project8')">Project 8</div>
+                    </div>
+                </div> -->
                 <div class="BigTitle">SELECTED WORK</div>
                     <div id="optionList" class="project-list">
                         <div class="option" onclick="showProject('Havens')">Havens</div>
                         <div class="option" onclick="showProject('Havens API')">Havens API</div>
                         <div class="option" onclick="showProject('mydreamwallet')">mydreamwallet</div>
-                        <div class="option" onclick="showProject('project4')">Project 4</div>
-                        <div class="option" onclick="showProject('project5')">Project 5</div>
+                        <div class="option" onclick="showProject('Bookovery')">Bookovery</div>
+                        <!-- <div class="option" onclick="showProject('project5')">Project 5</div>
                         <div class="option" onclick="showProject('project6')">Project 6</div>
                         <div class="option" onclick="showProject('project7')">Project 7</div>
-                        <div class="option" onclick="showProject('project8')">Project 8</div>
+                        <div class="option" onclick="showProject('project8')">Project 8</div> -->
                     </div>
                     <div id="Havens" class="project-section" style="display: none;">
                         <div class="BigTitle">Havens</div>
                         <div>
                             <a href="https://havens.fr" target="_blank"><img src="./img/SimpleLogo.png" height="200" width="200"></a>
                         </div>
-                        <div id="textPresentation">
+                        <p>
                             The idea of Havens is to let you build your own social media. It's a club-based community allowing you connect with people who share your passions. 
-                        </div>
-                        <div>Havens is design using React (Next JS will be implemented soon to enhance the rendering) for the front and it is using the <a onclick="showProject('Havens API')">Havens API</a> to deal with the database.</div>
-
+                        </p>
+                        <p>Havens is design using React (Next JS will be implemented soon to enhance the rendering) for the front and it is using the <a onclick="showProject('Havens API')">Havens API</a> to deal with the database.</p>
+                        <p>This website is aim to grow, and I'm using all my free time trying to implement new functionnalities. If you interested in the project don't hesitate to reach me here: admin@havens.fr</p>
                     </div>
                     <div id="Havens API" class="project-section" style="display: none;">
                         <div class="BigTitle">Havens API</div>
                         <div>
                             <a href="https://api.havens.fr" target="_blank"><img src="./img/HavensAPILogo.png" height="200" width="200"></a>
                         </div>
-                        <div>Havens REST API is build using Express in NodeJS, the documentation of this API is not yet available. The goal of this API is to let any applications interact with the <a onclick="showProject('Havens')">Havens</a> social network for free.</div>
+                        <p>Havens REST API is build using Express in NodeJS, the documentation of this API is not yet available. The goal of this API is to let any applications interact with the <a onclick="showProject('Havens')">Havens</a> social network for free.</p>
                     </div>
                     <div id="mydreamwallet" class="project-section" style="display: none;">
                         <div class="BigTitle">mydreamwallet</div>
+                        <div>
+                            <a href="https://mydreamwallet.fr" target="_blank"><img src="./img/mydreamwallet.png" height="200" width="200"></a>
+                        </div>
+                        <p>mydreamwallet was one of the first website I made, the purpose of mydreamwallet was to simulate crypto investemnts, you could invest fictive money into cryptos and see how your investemnts would grow or not in the future.</p>
+                        <p>Later on, I also implemented a card trading collection, which kinda looks like a NFT's market place where you could trade with your friends. Each day you could roll 3 of them for free.</p>
+                        <p>This website was built using Html, Css and Php for the backend, with just a little of Javascript to use the websockets of binance in order to get the crypto price at the moment.</p>
                     </div>
-                    <div id="project4" class="project-section" style="display: none;">
-                        <div class="BigTitle">Project 4</div>
+                    <div id="Bookovery" class="project-section" style="display: none;">
+                        <div class="BigTitle">Bookovery</div>
+                        <div>
+                            <a href="https://github.com/bookoverywebsite" target="_blank"><img src="./img/Bookovery.png" height="150" width="200"></a>
+                        </div>
+                        <p>Bookovery is a website in the making, that will redifine the way you are looking for a read. The site will be entirely build using React.</p>
+                        <p>*This is a fictionnal logo found on pinterest : Dribbble*</p>
                     </div>
-                    <div id="project5" class="project-section" style="display: none;">
+                    <!-- <div id="project5" class="project-section" style="display: none;">
                         <div class="BigTitle">Project 5</div>
                     </div>
                     <div id="project6" class="project-section" style="display: none;">
@@ -105,12 +129,13 @@
                     </div>
                     <div id="project8" class="project-section" style="display: none;">
                         <div class="BigTitle">Project 8</div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
             <div id="aboutContent" class="content-section" style="display:none;">
                 <div class="BigTitle">Hi, I'm Thomas</div>
-                <p>about content</p>
+                <p>I'm currently studying software engineering at Efrei in Paris.</p>
+                <p>/Coming\</p>
             </div>
             <div id="moreContent" class="content-section" style="display:none;">
                 <div class="BigTitle">MORE</div>
